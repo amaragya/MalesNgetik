@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="-6dp"
+        android:layout_weight="0.2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="SPEECH TO TEXT APP"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="00 : 00 : 00"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="323dp"
+            android:padding="10dp"
+            android:layout_weight="0.77">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar1"
+                android:layout_centerHorizontal="true"
+                android:textIsSelectable="true"
+                android:layout_weight="1" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/toggleButton1"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshape"
+            android:text="@string/recordicon"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/saatmulai"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/relatif1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/resumebutton"
+
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/pauseicon"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relatif2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/stopbutton"
+
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/stopicon"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="casual"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Tap tombol untuk mulai"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</RelativeLayout>
